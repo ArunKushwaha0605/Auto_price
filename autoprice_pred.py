@@ -4,10 +4,10 @@ import joblib
 import shap
 import matplotlib.pyplot as plt
 
-model=joblib.load('auto_price_model.pkl')
-model_columns=joblib.load('model_columns.pkl')
+model=joblib.load('auto_price_v2_model.pkl')
+model_columns=joblib.load('v2_model_columns.pkl')
 
-explainer=joblib.load('shap_explainer.pkl')
+explainer=joblib.load('shap_explainer_v2.pkl')
 
 def predict_price(incoming_data_dict):
     df=pd.DataFrame([incoming_data_dict])
